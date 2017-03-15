@@ -29,7 +29,7 @@ forked from https://github.com/ghostry/openwrt-gmod/tree/master/package/cdns  ,�
    # 以 ar71xx 平台为例
    tar xjf OpenWrt-SDK-ar71xx-for-linux-x86_64-gcc-4.8-linaro_uClibc-0.9.33.2.tar.bz2
    cd OpenWrt-SDK-ar71xx-*
-# 获取 cdns Makefile
+   # 获取 cdns Makefile
    git clone https://github.com/AlexZhuo/openwrt-cdns.git package/cdns
    # 选择要编译的包 Gmod -> Network -> cdns
    make menuconfig
