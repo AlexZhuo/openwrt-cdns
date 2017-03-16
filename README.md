@@ -5,7 +5,7 @@ forked from https://github.com/ghostry/openwrt-gmod/tree/master/package/cdns  ,�
 简介
 ---
 
-本软件包是 [CDNS][1] 在OpenWrt上的移植，用于快速获得无污染DNS，可与[luci-app-cdns][2]配合使用
+本软件包是 [CDNS][1] 在OpenWrt上的移植，用于快速获得无污染DNS，可与[luci-app-cdns][2]配合使用。在OpenWrt CC 15.05 , CC 15.05.1 , PandoraBox 16.10 SDK, LEDE 17.01.0编译通过
 
 特性
 ---
@@ -31,9 +31,10 @@ forked from https://github.com/ghostry/openwrt-gmod/tree/master/package/cdns  ,�
    cd OpenWrt-SDK-ar71xx-*
    # 获取 cdns Makefile
    git clone https://github.com/AlexZhuo/openwrt-cdns.git package/cdns
-   # 选择要编译的包 Gmod -> Network -> cdns
+   # 选择要编译的包 Utilities -> DNS -> cdns
    make menuconfig
    # 开始编译
+   # 如果使用PandoraBox SDK请先编译cdns-pandorabox再编译cdns，最终用于安装的ipk应为cdns
    make package/cdns/compile V=99
    ```
 
